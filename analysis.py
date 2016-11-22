@@ -19,6 +19,7 @@ def ask_a_question(df, que):
         g.map(sns.barplot, 'candidate', 'candidate_pct', palette=c_pal)
 	g.set_xticklabels(rotation=90)
 	g.set_ylabels('Candidate %')
+	g.set_xlabels('')
 	plt.ylim(0,100)
 	plt.show()
 
